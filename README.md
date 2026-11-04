@@ -1,13 +1,13 @@
 # 💝 Sistema Web Automatizado para Rifa Beneficente (Dia dos Namorados - Restaurante Hannover)
 
-Este é um sistema Full-Stack desenvolvido para automatizar a arrecadação de fundos do grupo de jovens da igreja através de uma rifa online, eliminando o uso de canhotos de papel e o controle manual em planilhas.
+Este é um sistema Full-Stack desenvolvido para automatizar a arrecadação de fundos do grupo de jovens da minha igreja através de uma rifa online, eliminando o uso de canhotos de papel e o controle manual em planilhas.
 
 🔗 **Links do Projeto em Produção:**
 * **Site da Rifa (Público):** (https://zippy-rifahannover-91de4a.netlify.app)
 * **Painel de Controle (Admin):** (https://paineldecontrole-rifahannover.netlify.app)
 
 ## 🎯 O Problema de Negócio
- Tradicionalmente, a venda de rifas para eventos da igreja utilizava blocos de papel e canhotos físicos, exigindo distribuição manual aos jovens, controle por mensagens de WhatsApp e anotações em cadernos ou planilhas desconexas. Esse método gerava alto atrito operacional, risco de perda de bilhetes e dificuldade no acompanhamento em tempo real do caixa.
+ Tradicionalmente, a venda de rifas para eventos da minha igreja utilizava blocos de papel e canhotos físicos, exigindo distribuição manual aos jovens, controle por mensagens de WhatsApp e anotações em cadernos ou planilhas desconexas. Esse método gerava alto atrito operacional, risco de perda de bilhetes e dificuldade no acompanhamento em tempo real do caixa.
 
 ## 💡 A Solução e Arquitetura
 Desenvolvi uma plataforma web interativa dividida em duas frentes integradas:
