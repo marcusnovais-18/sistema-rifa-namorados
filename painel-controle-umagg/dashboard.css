@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcf6f0; /* Fundo claro e limpo */
+    color: #4a0e1e; /* Cor vinho UMAGG */
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #8c7355;
+}
+
+.logo-img {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header h2 {
+    color: #8c7355;
+    font-weight: normal;
+}
+
+/* Seção de Resumo (KPIs) */
+.summary-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.kpi-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 5px solid;
+}
+
+.kpi-card h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.kpi-card p {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Cores específicas para cada cartão */
+.kpi-card.total { border-left-color: #4a0e1e; color: #4a0e1e; }
+.kpi-card.vendidos { border-left-color: #2ecc71; color: #2ecc71; } /* Verde para sucesso */
+.kpi-card.restantes { border-left-color: #e74c3c; color: #e74c3c; } /* Vermelho para alerta */
+
+/* Seção da Tabela */
+.table-section h2 {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Permite rolar pro lado em celular */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Garante que a tabela não fique muito espremida */
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #4a0e1e;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Linhas específicas da tabela */
+.numero-col {
+    font-weight: bold;
+    color: #4a0e1e;
+    font-size: 18px;
+    width: 60px;
+    text-align: center;
+}
+
+.telefone-col {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.loading-row {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 40px;
+}

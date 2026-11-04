@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Rifa UMAGG</title>
+    
+    <!-- Link para o arquivo de estilos -->
+    <link rel="stylesheet" href="dashboard.css">
+    
+    <!-- Firebase SDKs (Versões Compatíveis para LEITURA) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>Painel de Controle: Rifa Dia dos Namorados 💖</h1>
+            <h2>UMAGG Jardim São Carlos</h2>
+        </header>
+
+        <!-- Seção de Resumo (KPIs) -->
+        <section class="summary-section">
+            <div class="kpi-card total">
+                <h3>Total Compradores</h3>
+                <p id="totalCompradores">Carregando...</p>
+            </div>
+            <div class="kpi-card vendidos">
+                <h3>Números Vendidos</h3>
+                <p id="numerosVendidos">Carregando...</p>
+            </div>
+            <div class="kpi-card restantes">
+                <h3>Restantes</h3>
+                <p id="numerosRestantes">Carregando...</p>
+            </div>
+        </section>
+
+        <!-- Seção da Tabela Detalhada -->
+        <section class="table-section">
+            <h2>Lista Detalhada de Compradores</h2>
+            <div class="table-container">
+                <table id="compradoresTable">
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Nome do Comprador</th>
+                            <th>Telefone (WhatsApp)</th>
+                            <th>Data/Hora Reserva</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="4" class="loading-row">Buscando dados no Firebase...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link para o arquivo de funcionamento -->
+    <script src="dashboard.js"></script>
+</body>
+</html>

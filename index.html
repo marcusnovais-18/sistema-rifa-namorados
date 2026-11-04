@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Especial - Dia dos Namorados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Sorteio de Dia dos Namorados</h1>
+        <p>Grupo de Jovens - Concorra a uma noite inesquecível de Fondue!</p>
+    </header>
+
+    <main>
+        <section class="restaurante-info">
+            <h2>O Prêmio: Jantar Romântico no Hannover</h2>
+            <div class="imagem-container">
+                <img src="restaurante.jpg" alt="Ambiente do Restaurante Hannover" class="foto-restaurante">
+            </div>
+            <p class="descricao">Um voucher completo para você e seu amor desfrutarem de uma noite maravilhosa no restaurante mais romântico de São Paulo, com um ambiente incrível sob um teto de vidro e um cardápio requintado.</p>
+            <div class="detalhes-local">
+                <p><strong>📍 Endereço:</strong> Av. Cotovia, 445 - Moema, São Paulo, SP</p>
+                <p><strong>📞 Telefone/WhatsApp:</strong> (11) 5561-5411</p>
+                <p><strong>🕒 Funcionamento:</strong><br>Segunda a quinta e domingo: das 18h às 23h30<br>Sexta e sábado: das 18h às 0h30</p>
+            </div>
+            <a href="https://restaurantehannover.com.br/hannover-moema/" target="_blank" class="btn-restaurante">Ver o Site Oficial do Restaurante</a>
+        </section>
+
+        <section class="pagamento-info">
+            <h3>Dados para Pagamento (Valor: R$ 20,00)</h3>
+            <p>Após escolher seu número, realize o pagamento via PIX para confirmar sua reserva.</p>
+            <div class="chave-pix">
+                <p><strong>Chave PIX (E-mail):</strong> Uma.ggjsc@gmail.com</p>
+                <p><strong>Nome:</strong> Marcus Vinicius Novais</p>
+            </div>
+        </section>
+
+        <section class="rifa-container">
+            <h2>Escolha seu Número</h2>
+            <p>Clique no número desejado. Números cinzas já foram reservados.</p>
+            <div id="grid-numeros" class="grid-numeros"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ação organizada pelo Grupo de Jovens. Boa sorte aos apaixonados!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
